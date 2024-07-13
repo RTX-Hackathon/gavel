@@ -92,3 +92,4 @@ EMAIL_BODY =           c.get('email_body',                                   def
 SEND_STATS =     _bool(c.get('send_stats',      'SEND_STATS',                default=True))
 USE_SENDGRID =   _bool(c.get('use_sendgrid',    'USE_SENDGRID',              default=False))
 SENDGRID_API_KEY =     c.get('sendgrid_api_key', 'SENDGRID_API_KEY',         default=None)
+HACK_NAME =            c.get('hack_name',       'HACK_NAME',                 default=constants.DEFAULT_HACK_NAME)
