@@ -1,5 +1,3 @@
-import gavel.settings as settings
-
 ANNOTATOR_ID = 'annotator_id'
 TELEMETRY_URL = 'https://telemetry.anish.io/api/v1/submit'
 TELEMETRY_DELTA = 20 * 60 # seconds
@@ -36,7 +34,7 @@ Gavel makes it really simple for you to submit votes, but please think hard
 before you vote. **Once you make a decision, you can't take it back**.
 '''.strip()
 
-DEFAULT_EMAIL_SUBJECT = settings.HACK_NAME + ' - Welcome to Gavel!'
+DEFAULT_EMAIL_SUBJECT = ' - Welcome to Gavel!'
 
 DEFAULT_EMAIL_BODY = '''
 Hi {name},
