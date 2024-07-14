@@ -24,13 +24,7 @@ class Item(db.Model):
         self.location = location
         self.mu = crowd_bt.MU_PRIOR
         self.sigma_sq = crowd_bt.SIGMA_SQ_PRIOR
-
-        if "watch?v=" in description:
-            embeded_url = "https://www.youtube.com/embed/" + description.split('watch?v=')[-1]
-            self.description = embeded_url
-        elif "youtu.be" in description:
-            embeded_url = "https://www.youtube.com/embed/" + description.split('youtu.be/')[-1]
-            self.description = embeded_url
+        self.description = description
 
     @classmethod
     def by_id(cls, uid):
